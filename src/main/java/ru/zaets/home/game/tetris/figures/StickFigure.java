@@ -10,6 +10,7 @@ public class StickFigure extends Figure {
 
     public StickFigure(Color color) {
         super(color);
+        super.setDefaultTemplate(defaultTemplate);
     }
 
 }

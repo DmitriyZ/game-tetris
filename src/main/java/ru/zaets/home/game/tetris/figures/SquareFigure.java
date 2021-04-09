@@ -9,8 +9,9 @@ public class SquareFigure extends Figure {
             {1, 1}
     };
 
-    protected SquareFigure(Color color) {
+    public SquareFigure(Color color) {
         super(color);
+        super.setDefaultTemplate(defaultTemplate);
     }
 
 }

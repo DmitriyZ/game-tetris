@@ -11,6 +11,7 @@ public class RightHookFigure extends Figure {
 
     public RightHookFigure(Color color) {
         super(color);
+        super.setDefaultTemplate(defaultTemplate);
     }
 
 

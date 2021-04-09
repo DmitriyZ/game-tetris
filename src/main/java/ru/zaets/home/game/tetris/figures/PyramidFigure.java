@@ -12,6 +12,7 @@ public class PyramidFigure extends Figure {
 
     public PyramidFigure(Color color) {
         super(color);
+        super.setDefaultTemplate(defaultTemplate);
     }
 
 }

@@ -11,6 +11,7 @@ public class LeftHookFigure extends Figure {
 
     public LeftHookFigure(Color color) {
         super(color);
+        super.setDefaultTemplate(defaultTemplate);
     }
 
 }

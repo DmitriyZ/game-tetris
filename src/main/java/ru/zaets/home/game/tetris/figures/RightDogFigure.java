@@ -11,6 +11,7 @@ public class RightDogFigure extends Figure {
 
     public RightDogFigure(Color color) {
         super(color);
+        super.setDefaultTemplate(defaultTemplate);
     }
 
 }
