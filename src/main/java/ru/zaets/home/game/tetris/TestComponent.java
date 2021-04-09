@@ -3,13 +3,23 @@ package ru.zaets.home.game.tetris;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
-public class Bucket extends JComponent {
+public class TestComponent extends JComponent {
 
-    private final Rectangle rectangle = new Rectangle(40, 40);
+    private Rectangle rectangle = new Rectangle(40, 40);
 
-    public Bucket() {
+    public TestComponent() {
         super();
+
+        System.out.println("boo");
+        Action doNothing = new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                rectangle = new Rectangle(100, 100);
+                System.out.println("action");
+            }
+        };
+        getInputMap().put(KeyStroke.getKeyStroke('X'), doNothing);
 
         setLocation(70, 40);
         setBorder(new LineBorder(Color.CYAN));

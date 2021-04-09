@@ -1,7 +1,8 @@
 package ru.zaets.home.game.tetris;
 
+import ru.zaets.home.game.tetris.stage.Bucket;
+
 import javax.swing.*;
-import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,14 +10,14 @@ public class Main {
     }
 
     private static void createAndShowGui() {
-        Bucket bucket = new Bucket();
+        TestComponent testComponent = new TestComponent();
 
 
         JFrame frame = new JFrame("Tetris");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Container contentPane = frame.getContentPane();
-        contentPane.setBackground(Color.white);
-        contentPane.add(bucket);
+//        Container contentPane = frame.getContentPane();
+//        contentPane.setBackground(Color.white);
+        frame.add(testComponent);
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
